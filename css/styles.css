@@ -1,0 +1,56 @@
+/*resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*makes width and height include padding and borders*/
+}
+
+/* setting up a readable page*/
+body {
+  font-family: Arial, sans-serif; /*radable font and backup for screen reader*/
+  background-color: #f0f4f8; /*light gray background*/
+  padding: 1rem; /*adding space arount the entire page content*/
+  color: #333; /*choosing dark dray for contrast*/
+}
+
+/*style for the page heading */
+h1 {
+  text-align: center; /*place in center horizontally*/
+  margin-bottom: 2rem; /*adding space below heading before the bood cards*/
+}
+
+/*container for all book cards */
+#books {
+  display: flex; /*using flexbx fro a flexible wrap*/
+  flex-wrap: wrap; /*allowing the cards to wrap to new lines*/
+  gap: 1rem; /*spacng between each book card*/
+  justify-content: center; /*centering all of my cards horizontally*/
+}
+
+/*individual book cards style s*/
+.book-card {
+  background: #fff;
+  border-radius: 10px; /*rounding corners*/
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /*tyring a shadow, learned through Frontend Masters, though I cant see what its doing*/
+  padding: 1rem; /*adding space inside the cards*/
+  width: 300px; /*adding a fixed width so the layout is consistent*/
+  outline: none;
+}
+
+/*for keyboard navigation*/
+.book-card:focus {
+  border: 4px solid #005fcc;
+}
+
+/*image styling */
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+/*text spacing */
+.book-card p {
+  margin: 0.5rem 0;
+}

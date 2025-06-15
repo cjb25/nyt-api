@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title appears in the browser tab-->
+    <title>API NYT Best Sellers</title>
+    <link rel="stylesheet" href="css/styles.css" />
+      </head>
+      <!--page title with accessibility attribute tabindex="0" allows my keyboard to focus on this element -->
+    <h1 tabindex= "0">New York Times Best Sellers</h1>
+    <!--container where book cards will be displayed, aria-live="polite" tells my screen readers to announce changes to this area -->
+    <!-- id="books" allows JavaScript to find and modify this element -->
+    <div id="books" aria-live="polite"></div>
+    <script src="js/api.js"></script>
+
+</body>
+</html>
+
