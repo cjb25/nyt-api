@@ -77,7 +77,7 @@ amazonUrl.textContent = "Buy on Amazon";
 amazonUrl.target = "_blank";*/
 
   // I need to make sure I actually have books to display, an if statement prevents the code from crashing if something went wrong
-  // !books means "if books doesn't exist" and books.length === 0 means "if the array is empty"
+  //!books means "if books doesn't exist" and books.length === 0 means "if the array is empty"
   // The || means "OR" - so if EITHER condition is true, it will show an error message
   // Source: MDN Logical Operators - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
   if (!books || books.length === 0) {
@@ -105,7 +105,7 @@ amazonUrl.target = "_blank";*/
     card.setAttribute("role", "region");
     // aria-label provides a spoken description for screen readers
     //using template literals (${}) to insert the book's title and author
-    // Template literals are cleaner than using + to combine strings
+    // template literals are cleaner than using + to combine strings
     // Source: MDN Template Literals - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
     card.setAttribute("aria-label", `${book.title} by ${book.author}`);
 
